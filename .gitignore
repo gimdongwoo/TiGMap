@@ -5,3 +5,5 @@ build
 .DS_Store
 xcuserdata/
 xcshareddata/
+node_modules/
+example_test_build/
