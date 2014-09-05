@@ -13,15 +13,11 @@ function randomFloatBetween(minValue,maxValue,precision){
     return parseFloat(Math.min(minValue + (Math.random() * (maxValue - minValue)),maxValue).toFixed(precision));
 }
 
-var mainWin = Ti.UI.createWindow({
-	backgroundColor:'white'
-});
-
 var btnWindow = Ti.UI.createWindow({
 	backgroundColor:'white'
 });
 
-var nav = Titanium.UI.iPhone.createNavigationGroup({
+var nav = Titanium.UI.iOS.createNavigationWindow({
    window: btnWindow
 });
 
@@ -31,17 +27,15 @@ var win = Ti.UI.createWindow({
 	url: 'map.js'
 });
 
-
 var button = Ti.UI.createButton({
 	title: 'Open Map'
 });
 button.addEventListener('click', function(){
-	nav.open(win, {animated:true});
+	nav.openWindow(win, {animated:true});
 });
 
 btnWindow.add(button);
-mainWin.add(nav);
-mainWin.open();
+nav.open();
 
 /*
 

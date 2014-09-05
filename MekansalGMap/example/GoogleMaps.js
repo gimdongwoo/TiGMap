@@ -85,8 +85,9 @@ GoogleMaps.prototype.initMap = function (params)
 				latitude: params.latitude, 
 				longitude: params.longitude
 			},
-			zoom: params.zoom
-		});	
+			zoom: params.zoom,
+			myLocation : true
+		});
 						
 		that.mapView = Titanium.UI.createView({
 		    height: params.height,

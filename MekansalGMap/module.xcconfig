@@ -25,5 +25,4 @@
 //
 // IMPORTANT NOTE: always use $(inherited) in your overrides
 // 
-EXT_MODS_BASEDIR=/Users/alper/Documents/temp/timod/TiGMapV3/MekansalGMap
-OTHER_LDFLAGS=$(inherited) -F"$(EXT_MODS_BASEDIR)" -F"/Users/alper/Documents/temp/Frameworks/GoogleMapsIOS-1.3.0/GoogleMaps.framework" -framework GoogleMaps -framework AVFoundation -framework CoreText -framework CoreData -framework CoreGraphics -framework CoreLocation -framework ImageIO -framework GLKit -framework SystemConfiguration -framework QuartzCore -framework OpenGLES /usr/lib/libz.dylib /usr/lib/libc++.dylib /usr/lib/libicucore.dylib /usr/lib/libobjc.A.dylib
+OTHER_LDFLAGS=$(inherited) -F "/Users/yomybaby/Documents/test/TiGMap/MekansalGMap" -framework GoogleMaps -framework AVFoundation -framework CoreText -framework CoreData -framework CoreGraphics -framework CoreLocation -framework ImageIO -framework GLKit -framework SystemConfiguration -framework QuartzCore -framework OpenGLES /usr/lib/libz.dylib /usr/lib/libc++.dylib /usr/lib/libicucore.dylib /usr/lib/libobjc.A.dylib

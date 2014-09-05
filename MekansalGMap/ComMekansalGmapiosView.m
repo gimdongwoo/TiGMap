@@ -57,7 +57,7 @@
         _map = [[GMSMapView alloc] initWithFrame:self.bounds];
 		//GMSCameraPosition* camera = [GMSCameraPosition cameraWithLatitude:1.285 longitude:103.848 zoom:12];
 		//_map = [GMSMapView mapWithFrame:self.bounds camera:camera];
-		_map.myLocationEnabled = YES;
+		_map.myLocationEnabled = NO;
         _map.delegate = self;
         //_map.projection.visibleRegion.farLeft.latitude
 		[self addSubview:_map];

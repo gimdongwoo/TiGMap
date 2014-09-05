@@ -70,9 +70,9 @@
 		4EA422621757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMekansalGmapiosPolygonProxy.h; sourceTree = "<group>"; };
 		4EA422631757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComMekansalGmapiosPolygonProxy.m; sourceTree = "<group>"; };
 		4EBB53431754B261000CC577 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		4EBB53451754B270000CC577 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		4EEE3EA71757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMekansalGmapiosPolylineProxy.h; sourceTree = "<group>"; };
 		4EEE3EA81757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComMekansalGmapiosPolylineProxy.m; sourceTree = "<group>"; };
+		75563A1B196E11CB000F377E /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = assets/GoogleMaps.bundle; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ComMekansalGmapios_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMekansalGmapios_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libComMekansalGmapios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComMekansalGmapios.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +113,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EBB53451754B270000CC577 /* GoogleMaps.bundle */,
+				75563A1B196E11CB000F377E /* GoogleMaps.bundle */,
 				4EBB53431754B261000CC577 /* GoogleMaps.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
@@ -196,6 +196,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "MekansalGMap" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -298,6 +300,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
+				TITANIUM_SDK_VERSION = 3.2.3.GA;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -335,6 +338,7 @@
 				PRODUCT_NAME = ComMekansalGmapios;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
+				TITANIUM_SDK_VERSION = 3.2.3.GA;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
