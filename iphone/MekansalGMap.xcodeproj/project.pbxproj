@@ -36,9 +36,9 @@
 		4E4C5FD21755FE2200151E5C /* ComMekansalGmapiosTileLayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C5FD01755FE2200151E5C /* ComMekansalGmapiosTileLayerProxy.m */; };
 		4EA422641757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA422621757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.h */; };
 		4EA422651757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA422631757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.m */; };
-		4EBB53441754B261000CC577 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBB53431754B261000CC577 /* GoogleMaps.framework */; };
 		4EEE3EA91757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEE3EA71757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.h */; };
 		4EEE3EAA1757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE3EA81757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.m */; };
+		75C26D8219D54E2000DD6A6E /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C26D8119D54E2000DD6A6E /* GoogleMaps.framework */; };
 		AA747D9F0F9514B9006C5449 /* ComMekansalGmapios_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComMekansalGmapios_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -69,10 +69,10 @@
 		4E4C5FD01755FE2200151E5C /* ComMekansalGmapiosTileLayerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComMekansalGmapiosTileLayerProxy.m; sourceTree = "<group>"; };
 		4EA422621757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMekansalGmapiosPolygonProxy.h; sourceTree = "<group>"; };
 		4EA422631757588000A5D3E6 /* ComMekansalGmapiosPolygonProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComMekansalGmapiosPolygonProxy.m; sourceTree = "<group>"; };
-		4EBB53431754B261000CC577 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		4EEE3EA71757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMekansalGmapiosPolylineProxy.h; sourceTree = "<group>"; };
 		4EEE3EA81757396900C6EC22 /* ComMekansalGmapiosPolylineProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComMekansalGmapiosPolylineProxy.m; sourceTree = "<group>"; };
 		75563A1B196E11CB000F377E /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = assets/GoogleMaps.bundle; sourceTree = "<group>"; };
+		75C26D8119D54E2000DD6A6E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = platform/GoogleMaps.framework; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ComMekansalGmapios_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMekansalGmapios_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libComMekansalGmapios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComMekansalGmapios.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C26D8219D54E2000DD6A6E /* GoogleMaps.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
-				4EBB53441754B261000CC577 /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +113,8 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75C26D8119D54E2000DD6A6E /* GoogleMaps.framework */,
 				75563A1B196E11CB000F377E /* GoogleMaps.bundle */,
-				4EBB53431754B261000CC577 /* GoogleMaps.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -271,7 +271,8 @@
 				DSTROOT = /tmp/ComMekansalGmapios.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/platform",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -313,7 +314,8 @@
 				DSTROOT = /tmp/ComMekansalGmapios.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/platform",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
