@@ -1,7 +1,7 @@
 var config = {
 	IOS_EXAMPLE_BUILD_COMMAND : 'ti build -p ios',
 	ANDROID_EXAMPLE_BUILD_COMMAND : 'ti build -p android',
-	TITANIUM_SDK_DIR : '~/Library/Application\\ Support/Titanium/mobilesdk/osx/3.3.0.GA',
+	TITANIUM_SDK_DIR : '~/Library/Application\\ Support/Titanium/mobilesdk/osx/3.4.0.v20140925154326',
 	EXAMPLE_PROJECT_NAME : 'example_test_build'
 }
 
@@ -90,7 +90,12 @@ function createTemplateProject(manifest,cb){
 			var target_tiapp = fs.readFileSync(path.join(example_project_path,"tiapp.xml"),'utf8');
 			var write_tiapp = target_tiapp
 				.replace('</guid>', UUID.create().toString()+'</guid>')
-				.replace('</modules>', moduleTag + '</modules>\n');
+				.replace('</modules>', moduleTag + '</modules>\n')
+				.replace('</ti:app>',	'\t<deployment-targets>\n'+
+							'\t\t<target device="android">true</target>\n'+
+							'\t\t<target device="ipad">true</target>\n'+
+							'\t\t<target device="iphone">true</target>\n'+
+						'\t</deployment-targets>\n</ti:app>');
 			
 			fs.writeFileSync(path.join(example_project_path,"tiapp.xml"), write_tiapp);
 			
