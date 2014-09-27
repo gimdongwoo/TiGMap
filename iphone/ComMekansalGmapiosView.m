@@ -274,6 +274,7 @@
 
 -(void)setMapType_:(id)value
 {
+    ENSURE_UI_THREAD(setMapType_,value);
 	[[self map] setMapType:[TiUtils intValue:value]];
 }
 

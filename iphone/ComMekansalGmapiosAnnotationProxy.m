@@ -23,6 +23,7 @@
 
 -(void)addToMap:(GMSMapView *)mapView
 {
+    ENSURE_UI_THREAD(addToMap,mapView);
 	self.markerObj = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake(
                                                                               [TiUtils doubleValue:[self valueForUndefinedKey:@"latitude"]],
                                                                               [TiUtils doubleValue:[self valueForUndefinedKey:@"longitude"]] ) ];
@@ -45,6 +46,7 @@
 }
 -(void)removeFromMap:(GMSMapView *)mapView
 {
+    ENSURE_UI_THREAD(removeFromMap,mapView);
 	if (_markerObj!=nil)
 	{
 		_markerObj.map = nil;
