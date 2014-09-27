@@ -13,6 +13,7 @@
 
 -(void)dealloc
 {
+    ENSURE_UI_THREAD(dealloc,nil);
     if (_markerObj!=nil)
     {
 		_markerObj.map = nil;
