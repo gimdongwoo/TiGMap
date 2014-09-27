@@ -4,7 +4,7 @@ Ti.API.info("---> Step -3");
 var GoogleMapsClass = require('GoogleMaps');
 Ti.API.info("---> Step -2");
 var GoogleMaps = new GoogleMapsClass({
-	iOSKey: "AIzaSyDPMmKovvGI3vTCX2KwSthuK0jxBvHuMHM"
+	iOSKey: "AIzaSyBLHKgP3ec1aqsUOUoJBGKhwU8QM_fXJHw"
 });
 Ti.API.info("---> Step -1");
 var mapView = GoogleMaps.initMap({
